@@ -1,13 +1,15 @@
-import './App.css';
+import "./App.css";
+import React from "react";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 function App() {
-	return (
-		<>
-			<div className='div'>
-				<div className='h1'>Dallalio Portfolio</div>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <Home />
+      <Projects />
+    </>
+  );
 }
 
 export default App;
