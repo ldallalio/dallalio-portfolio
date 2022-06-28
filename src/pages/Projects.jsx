@@ -7,19 +7,22 @@ function Projects() {
       name: "photoPull",
       description: "Facebook API | ReactJS | Tailwind CSS",
       image: photoPull,
-      url: "https://github.com/ldallalio/dallalioweb.dev",
+      url: "https://photopull-app.vercel.app/",
+      source: "https://github.com/ldallalio/photopull-app",
     },
     {
-      name: "Logan",
-      description: "A website for a local business",
+      name: "photoPull",
+      description: "Facebook API | ReactJS | Tailwind CSS",
       image: photoPull,
-      url: "https://www.logan.com/",
+      url: "https://photopull-app.vercel.app/",
+      source: "https://github.com/ldallalio/photopull-app",
     },
     {
-      name: "Logan",
-      description: "A website for a local business",
-      image: "https://i.imgur.com/XzcXZUq.jpg",
-      url: "https://www.logan.com/",
+      name: "photoPull",
+      description: "Facebook API | ReactJS | Tailwind CSS",
+      image: photoPull,
+      url: "https://photopull-app.vercel.app/",
+      source: "https://github.com/ldallalio/photopull-app",
     },
   ];
   return (
@@ -32,12 +35,15 @@ function Projects() {
           return (
             <div className="project" key={index}>
               <div className="projectImage">
-                <img src={project.image} alt={project.name} />
+                <a href={project.url}>
+                  <img src={project.image} alt={project.name} />
+                </a>
               </div>
               <div className="projectInfo">
                 <h2>{project.name}</h2>
                 <p>{project.description}</p>
                 <a href={project.url}>Visit Site</a>
+                <a href={project.source}>View Source</a>
               </div>
             </div>
           );
