@@ -1,28 +1,29 @@
 import React from "react";
 import photoPull from "../assets/images/photoPull.png";
+import Unfiltered from "../assets/images/unfiltered.png";
+import UserLogin from "../assets/images/userLoginApp.png";
 
 function Projects() {
   const myProjects = [
     {
+      name: "Unfiltered with Kiran",
+      description: "React Native | Wordpress API  Firebase | AWS",
+      image: Unfiltered,
+      url: "https://apps.apple.com/us/app/unfiltered-with-kiran/id1624502392",
+    },
+    {
       name: "photoPull",
-      description: "Facebook API | ReactJS | Tailwind CSS",
+      description: "Facebook API | ReactJS  Tailwind CSS",
       image: photoPull,
       url: "https://photopull-app.vercel.app/",
       source: "https://github.com/ldallalio/photopull-app",
     },
     {
-      name: "photoPull",
-      description: "Facebook API | ReactJS | Tailwind CSS",
-      image: photoPull,
-      url: "https://photopull-app.vercel.app/",
-      source: "https://github.com/ldallalio/photopull-app",
-    },
-    {
-      name: "photoPull",
-      description: "Facebook API | ReactJS | Tailwind CSS",
-      image: photoPull,
-      url: "https://photopull-app.vercel.app/",
-      source: "https://github.com/ldallalio/photopull-app",
+      name: "UserLoginApp",
+      description: "ReactJS | Firebase ",
+      image: UserLogin,
+      url: "https://loving-sinoussi-b1c103.netlify.app",
+      source: "https://github.com/ldallalio/user-login",
     },
   ];
   return (
@@ -43,7 +44,7 @@ function Projects() {
                 <h2>{project.name}</h2>
                 <p>{project.description}</p>
                 <a href={project.url}>Visit Site</a>
-                <a href={project.source}>View Source</a>
+                {project.source && <a href={project.source}>View Source</a>}
               </div>
             </div>
           );
@@ -54,10 +55,3 @@ function Projects() {
 }
 
 export default Projects;
-
-// Language: javascript
-// Path: src/pages/Projects.jsx
-// Compare this snippet from src/pages/Home.jsx:
-// /* eslint-disable react/no-unescaped-entities */
-// import React from "react";
-// import heroImage from "../assets/images/logan.jpg";
