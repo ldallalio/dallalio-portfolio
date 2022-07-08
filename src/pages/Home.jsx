@@ -13,8 +13,9 @@ function Home() {
         <div className="heroText">
           <h1 className="hereTitle">Front-End Developer</h1>
           <h2 className="hereSub">
-            I'm a Front-End Developer who is Passionate about building
-            beautiful, responsive websites.
+            I'm a Front-End Developer who is passionate about creating beautiful
+            and functional websites and applications. I have a passion for
+            learning new technologies and constantly learning new things.
           </h2>
         </div>
       </div>
