@@ -2,6 +2,9 @@ import React from "react";
 import photoPull from "../assets/images/photoPull.png";
 import Unfiltered from "../assets/images/unfiltered.png";
 import UserLogin from "../assets/images/userLoginApp.png";
+import BigJohns from "../assets/images/bigjohns.png";
+import KleanKing from "../assets/images/kleanking.png";
+import Bearded from "../assets/images/beardedtruth.png";
 
 function Projects() {
   const myProjects = [
@@ -21,6 +24,30 @@ function Projects() {
       source: "https://github.com/ldallalio/photopull-app",
       details:
         "This is a Facebook API application that allows users to view their photos from Facebook wall and download them to their desktop. This app is built using ReactJS and Tailwind CSS.",
+    },
+    {
+      name: "theBeardedTruth",
+      description: "Wordpress",
+      image: Bearded,
+      url: "https://thebeardedtruth.com/",
+      details:
+        "Designed and developed a Wordpress website for a local company. This website was built using the WordPress CMS.",
+    },
+    {
+      name: "BigJohnsBurgers",
+      description: "Wordpress",
+      image: BigJohns,
+      url: "https://bigjohnsferriday.com",
+      details:
+        "Designed and developed a Wordpress website for a local company. This website was built using the WordPress CMS.",
+    },
+    {
+      name: "KleanKingCarpet",
+      description: "Wordpress",
+      image: KleanKing,
+      url: "https://kleankingcarpet.com",
+      details:
+        "Designed and developed a Wordpress website for a local company. This website was built using the WordPress CMS.",
     },
     {
       name: "UserLoginApp",
